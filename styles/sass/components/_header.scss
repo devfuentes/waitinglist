@@ -34,6 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: scrollDown 1.5s infinite ease-in-out;
 
     & .header-down__title{
       text-align: center;
@@ -54,3 +55,15 @@
   }
 }
 
+// animaion
+@keyframes scrollDown{
+  0%{
+    top: 90%;
+  }
+  50%{
+    top: 91%;
+  }
+  100%{
+    top: 90%;
+  }
+}

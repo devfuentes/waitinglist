@@ -7059,6 +7059,8 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  -webkit-animation: scrollDown 1.5s infinite ease-in-out;
+          animation: scrollDown 1.5s infinite ease-in-out;
 }
 .header .header-down .header-down__title {
   text-align: center;
@@ -7074,4 +7076,28 @@ h6 {
 }
 .form-header .form__input {
   border: 0;
+}
+
+@-webkit-keyframes scrollDown {
+  0% {
+    top: 90%;
+  }
+  50% {
+    top: 91%;
+  }
+  100% {
+    top: 90%;
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    top: 90%;
+  }
+  50% {
+    top: 91%;
+  }
+  100% {
+    top: 90%;
+  }
 }
