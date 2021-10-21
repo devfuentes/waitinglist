@@ -1,27 +1,45 @@
 .header{
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: rgb(235, 235, 235);
   position: relative;
+  padding: 10rem 0;
+  @include response-min($m){
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+  }
 
   & .header__img{
     margin-bottom: 2rem;
+    @include response-min($m){
+      margin-top: 0;
+    }
   }
 
   & .header__title{
-    font-size: 4rem;
-    line-height: calc(1em + 20px);
+    font-size: 2.5rem;
+    line-height: calc(1em + 15px);
+    @include response-min($m){
+      font-size: 4rem;
+      line-height: calc(1em + 20px);
+    }
   }
   
   & .header__desc{
-    font-size: 1.8rem;
-    max-width: 60%;
+    font-size: 1.6rem;
+    max-width: 100%;
     margin: 0 auto;
-    line-height: calc(1em + 10px);
+    line-height: calc(1em + 5px);
+    @include response-min($m){
+      max-width: 60%;
+      font-size: 1.8rem;
+      line-height: calc(1em + 10px); 
+    }
   }
 
   & .header-down{

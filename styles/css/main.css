@@ -7003,6 +7003,12 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 640px) {
+  .form .form__row {
+    flex-direction: row;
+  }
 }
 .form .form__row.form__row--between {
   justify-content: space-between;
@@ -7013,6 +7019,7 @@ h6 {
   font-size: 1.6rem;
   padding: 1rem;
   flex-wrap: nowrap;
+  margin-bottom: 1.2rem;
 }
 .form .form__input.form__input--submit {
   background-color: #1b1b1b;
@@ -7020,34 +7027,70 @@ h6 {
   cursor: pointer;
 }
 .form .form__input.form__input--30 {
-  max-width: 24%;
+  max-width: 100%;
+}
+@media only screen and (min-width: 640px) {
+  .form .form__input.form__input--30 {
+    max-width: 24%;
+  }
 }
 .form .form__input.form__input--80 {
-  max-width: 74%;
+  max-width: 100%;
+}
+@media only screen and (min-width: 640px) {
+  .form .form__input.form__input--80 {
+    max-width: 74%;
+  }
 }
 
 .header {
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: #ebebeb;
   position: relative;
+  padding: 10rem 0;
+}
+@media only screen and (min-width: 640px) {
+  .header {
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+  }
 }
 .header .header__img {
   margin-bottom: 2rem;
 }
+@media only screen and (min-width: 640px) {
+  .header .header__img {
+    margin-top: 0;
+  }
+}
 .header .header__title {
-  font-size: 4rem;
-  line-height: calc(1em + 20px);
+  font-size: 2.5rem;
+  line-height: calc(1em + 15px);
+}
+@media only screen and (min-width: 640px) {
+  .header .header__title {
+    font-size: 4rem;
+    line-height: calc(1em + 20px);
+  }
 }
 .header .header__desc {
-  font-size: 1.8rem;
-  max-width: 60%;
+  font-size: 1.6rem;
+  max-width: 100%;
   margin: 0 auto;
-  line-height: calc(1em + 10px);
+  line-height: calc(1em + 5px);
+}
+@media only screen and (min-width: 640px) {
+  .header .header__desc {
+    max-width: 60%;
+    font-size: 1.8rem;
+    line-height: calc(1em + 10px);
+  }
 }
 .header .header-down {
   width: auto;
