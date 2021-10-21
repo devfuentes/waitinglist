@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-color: rgb(235, 235, 235);
+  background-color: #EDD553;
   position: relative;
   padding: 10rem 0;
   @include response-min($m){
@@ -15,6 +15,7 @@
   }
 
   & .header__img{
+    max-width: 200px;
     margin-bottom: 2rem;
     @include response-min($m){
       margin-top: 0;
