@@ -1,0 +1,23 @@
+.about-list{
+  margin-top: 4rem;
+  list-style: none;
+
+  & .about-list__item{
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 3rem;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -20px;
+      width: 20px;
+      height: 20px;
+      background-image: url(../../img/check.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
